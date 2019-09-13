@@ -6,7 +6,7 @@ pycodestyle get_column_stats.py
     echo -e "$RANDOM\t$RANDOM\t$RANDOM\t$RANDOM\t$RANDOM";
 done )> data.txt
 
-python get_column_stats.py data.txt 2
+python get_column_stats.py --file_name data.txt --col_num 2
 
 
 V=1
@@ -14,4 +14,4 @@ V=1
     echo -e "$V\t$V\t$V\t$V\t$V";
 done )> data.txt
 
-python get_column_stats.py data.txt 2
+python get_column_stats.py --file_name data.txt --col_num 2
