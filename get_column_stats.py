@@ -2,6 +2,7 @@ import sys
 import math
 import argparse
 
+
 def main():
     parser = argparse.ArgumentParser(
             description='Program to get stats of a column of data.',
