@@ -3,6 +3,14 @@ import math
 import argparse
 
 
+def getmean(V):
+    return sum(V) / len(V)
+
+
+def getstdev(V):
+    return math.sqrt(sum([(getmean(V)-x)**2 for x in V]) / len(V))
+
+
 def main():
     parser = argparse.ArgumentParser(
             description='Program to get stats of a column of data.',
@@ -46,9 +54,9 @@ def main():
         print('Non number found in data.')
         quit(1)
 
-    mean = sum(V)/len(V)
+    mean = getmean(V)
 
-    stdev = math.sqrt(sum([(mean-x)**2 for x in V]) / len(V))
+    stdev = getstdev(V)
 
     print('mean:', mean)
     print('stdev:', stdev)
