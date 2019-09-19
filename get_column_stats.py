@@ -4,10 +4,16 @@ import argparse
 
 
 def getmean(V):
+    if V == []:
+        return None
+
     return sum(V) / len(V)
 
 
 def getstdev(V):
+    if V == []:
+        return None
+
     return math.sqrt(sum([(getmean(V)-x)**2 for x in V]) / len(V))
 
 
