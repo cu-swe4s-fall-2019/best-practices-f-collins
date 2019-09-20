@@ -7,6 +7,8 @@ import argparse
 
     * getmean - returns the mean of a list of numbers.
     * getstdev - returns the standard deviation of a list of numbers.'''
+
+
 def getmean(V):
     '''Finds the mean of a list of numbers.
     Parameters:
