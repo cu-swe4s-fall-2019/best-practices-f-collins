@@ -3,7 +3,19 @@ import math
 import argparse
 
 
+'''Mean and Standard Deviation Functions
+
+    * getmean - returns the mean of a list of numbers.
+    * getstdev - returns the standard deviation of a list of numbers.'''
+
+
 def getmean(V):
+    '''Finds the mean of a list of numbers.
+    Parameters:
+        V: List of numbers.
+    Returns:
+        The mean of all numbers in the list.
+    '''
     if V == []:
         return None
 
@@ -11,6 +23,12 @@ def getmean(V):
 
 
 def getstdev(V):
+    '''Finds the standard deviation of a list of numbers.
+    Parameters:
+        V: List of numbers.
+    Returns:
+        The standard deviation of all numbers in the list.
+    '''
     if V == []:
         return None
 
